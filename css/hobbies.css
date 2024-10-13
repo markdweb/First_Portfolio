@@ -1,0 +1,205 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Footer Guide */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+
+/* Background Colors */
+.backgroundContainer1 {
+    background-color: #e3fdfd;
+  }
+  .backgroundContainer2 {
+    background-color: #effffd;
+  }
+  
+
+  
+
+/* Footer Guide */
+main {
+  flex-grow: 1;
+}
+
+
+
+
+/* Flex Container */
+
+.flex-container1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 2em;
+}
+
+
+/* Padding */
+.paragraphPadding {
+    margin: 1em 2em;
+    text-align: left;
+  }
+
+  
+.paragraphPadding2 {
+    margin: 0em 2em;
+    padding: 1em 0;
+    text-align: left;
+  }
+
+
+  
+.paragraphPadding3 {
+    margin: 0em 2em;
+    padding: 1em 0 2em 0;
+    text-align: left;
+  }
+
+  .hobbiesPadding {
+    padding-top: 1em;
+    padding-bottom: 0.8em;
+  }
+
+  
+.goBackPadding {
+  padding-top: 1em;
+  padding-bottom: 5em;
+}
+
+
+
+/* Images */
+.puzzleIcon {
+    width: 9em;
+    margin-top: 2em;
+}
+
+
+
+/* Contents */
+.contactPadding {
+    margin-top: 1em;
+  }
+  
+  /* Footer */
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 1em;
+    background-color: #2fa4ff;
+    color: white;
+  }
+  
+  
+
+
+
+   /* Button Generator */
+   .myButton {
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background:linear-gradient(to bottom,  5%, #019ad2 100%);
+    background-color:#33bdef;
+    border-radius:6px;
+    border:1px solid #057fd0;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:8px 15px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #5b6178;
+    margin: 2em 0;
+}
+.myButton:hover {
+    background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+    background-color:#019ad2;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+/* Tablet */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Padding */
+  .paragraphPadding {
+    margin: 0em 4em;
+    padding: 1em 0;
+  }
+
+  .paragraphPadding2,
+  .paragraphPadding3 {
+    margin: 0 4em;
+    padding: 1em 0;
+  }
+
+  .puzzleIcon {
+    margin: 4em 0 2em 0;
+    width: 10em;
+  }
+
+  
+.goBackPadding {
+  padding-top: 1em;
+  padding-bottom: 5em;
+}
+
+
+}
+
+/* Desktop */
+@media only screen and (min-device-width: 1025px) {
+  /* Padding */
+  .paragraphPadding {
+    margin: 0 10em;
+    padding: 1.5em 0 1em 0;
+  }
+
+  .paragraphPadding2,
+  .paragraphPadding3 {
+    margin: 0 10em;
+    padding: 1em 0;
+  }
+
+  
+.goBackPadding {
+  padding-top: 1em;
+  padding-bottom: 5em;
+}
+
+
+}
+
+/* FONT STYLES */
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+    

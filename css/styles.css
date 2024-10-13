@@ -1,0 +1,649 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+html {
+    /* footer support */
+    position: relative;
+    min-height: 100%;
+  }
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  
+  /* Footer Guide */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+
+/* Footer Guide */
+main {
+  flex-grow: 1;
+}
+
+
+
+/* Background Containers */
+.backgroundContainer1 {
+  background-color: #e3fdfd;
+}
+.backgroundContainer2 {
+  background-color: #effffd;
+}
+.backgroundContainer3 {
+  background-color: #4a97d4;
+}
+
+/* Heading Tags */
+h2,
+h3, p {
+  color: #4a97d4;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  color: #1c658c;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  color: #022e57;
+}
+.headingIntro {
+  margin: 0 1em;
+}
+.headingWelcome {
+  font-size: 1.8em;
+}
+
+
+/* Footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 1em;
+  background-color: #2fa4ff;
+  color: white;
+}
+
+.copyright {
+  color: #ffffff;
+}
+
+
+/* Grid Container */
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 20em;
+  grid-template-rows: 14em;
+  justify-content: center;
+  text-align: center;
+}
+.grid-container1 .card {
+  margin: 0 0.5em;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 8em 8em;
+  justify-content: center;
+  text-align: center;
+  padding-top: 1em;
+}
+
+/* Mobile Only   */
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 4em 4em 4em 4em 4em;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flex Container */
+
+.flex-container1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 2em;
+}
+.flex-container1 .item {
+  margin: 0 1.5em;
+}
+
+
+
+/* Padding */
+.paragraphPadding {
+    margin: 1em 1em 2em 1em;
+    text-align: justify;
+  }
+
+.paragraphPadding2 {
+    margin: 1em 2em 1em 2em;
+    text-align: justify;
+  }
+
+.socialMediaPadding {
+  padding-top: 3em;
+}
+
+
+/*Images*/
+.forestIcon {
+  height: 11em;
+}
+.topCloudIcon,
+.bottomCloudIcon {
+  height: 9em;
+}
+.topCloudIcon {
+  margin-left: 12em;
+}
+.bottomCloudIcon {
+  margin-right: 12em;
+}
+
+.profilePicture {
+  height: 16em;
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+
+.contentPlanningIcon {
+    height: 8em;
+    padding-top: 1.5em;
+  }
+
+/* Skills - Images */
+.architectDesignerIcon,
+.studioTableIcon,
+.neuralMoleculeIcon {
+  height: 10em;
+  padding-top: 1.8em;
+}
+
+.airplaneGifIcon {
+  height: 10em;
+  padding: 0.5em 0;
+}
+
+
+.programmingLogoIcon {
+    height: 15em;
+}
+
+
+.socialMediaPadding {
+    padding-bottom: 1em;
+  }
+  
+  
+
+/* Tablet */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Heading Tag */
+  h1 {
+    font-size: 2em;
+  }
+  .headingWelcome {
+    font-size: 2.5em;
+    font-family: "Poppins", sans-serif;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.17em;
+  }
+
+  /* Paragraph Tag */
+  p {
+    font-size: 1em;
+  }
+  .paragraphWelcome {
+    font-size: 1.2em;
+  }
+
+  /* Flex Container */
+
+  .flex-container1 {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .headingIntro {
+    margin: 0 6em;
+  }
+  .flex-container1 .item {
+    margin: 0 0.8em;
+  }
+
+  /* Grid Container */
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 20em 20em;
+    grid-template-rows: 28em;
+  }
+  .grid-container1 .card {
+    margin: 2em 0.5em;
+  }
+
+  /* Grid Row - Grid Start - Grid End */
+  .grid-c {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .grid-d {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .grid-g {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .grid-h {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+
+  .flex-container1 .item {
+    margin: 0 6em;
+  }
+
+  /* Padding */
+  .paragraphPaddingTablet {
+    margin: 1em 4em 2em 4em;
+    text-align: justify;
+  }
+
+
+  .contactPadding {
+    padding-bottom: 1.5em;
+  }
+
+  /*Images*/
+  .forestIcon {
+    height: 14em;
+  }
+  .topCloudIcon,
+  .bottomCloudIcon {
+    height: 10.5em;
+  }
+  .topCloudIcon {
+    margin-left: 26em;
+    margin-top: 1em;
+  }
+  .bottomCloudIcon {
+    margin-right: 28em;
+  }
+
+  .profilePicture {
+    height: 18.5em;
+    padding-top: 5em;
+    padding-bottom: 2em;
+  }
+
+  /* Skills - Images */
+  .architectDesignerIcon,
+  .studioTableIcon,
+  .neuralMoleculeIcon {
+    height: 11.5em;
+    margin-bottom: 2em;
+  }
+
+  .airplaneGIF {
+    height: 10.5em;
+    padding: 1em 0;
+  }
+
+  .contentPlanningIcon {
+    height: 10em;
+    padding-top: 1.5em;
+  }
+
+  .programmingLogoIcon {
+    height: 15.5em;
+}
+
+
+  
+
+  /* Social Media */
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 1px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 1em;
+  }
+
+  .icon-bar a:hover {
+    background-color: #33bdef;
+  }
+
+  .facebook,
+  .instagram,
+  .github,
+  .linkedin,
+  .youtube {
+    color: white;
+  }
+  .facebook {
+    background: #2fa4ff;
+  }
+  .instagram {
+    background: #2fa4ff;
+  }
+  .github {
+    background: #2fa4ff;
+  }
+  .youtube {
+    background: #2fa4ff;
+  }
+  .linkedin {
+    background: #2fa4ff;
+  }
+  .content {
+    margin-left: 75px;
+    font-size: 30px;
+  }
+
+  /* Social Media Icons */
+  .socialMedia {
+    display: none;
+  }
+
+  .grid-container2 {
+    grid-template-columns: 11em 11em;
+    padding-top: 1em;
+  }
+
+  .socialMediaPadding {
+    display: none;
+  }
+  
+  
+}
+
+
+/* Icons */
+
+.fa-brands {
+  margin: 1em 1em;
+}
+
+/* Button Generator */
+.myButton {
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  background: linear-gradient(to bottom, 5%, #019ad2 100%);
+  background-color: #33bdef;
+  border-radius: 6px;
+  border: 1px solid #057fd0;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #5b6178;
+  margin: 3em 0;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+  background-color: #019ad2;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Desktop */
+@media only screen and (min-device-width: 1025px) {
+  /* Heading Tag */
+  h1 {
+    font-size: 2em;
+  }
+  .headingWelcome {
+    font-size: 3em;
+    font-family: "Poppins", sans-serif;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+
+  /* Paragraph Tag */
+  p {
+    font-size: 1.1em;
+  }
+
+  .paragraphWelcome {
+    font-size: 1.4em;
+  }
+
+
+  
+/* Padding */
+.paragraphPaddingDesktop {
+    margin: 1em 17.5em 2em 17.5em;
+    text-align: justify;
+  }
+
+  .desktopPadding {
+    margin-bottom: 2em;
+  }
+
+    .paragraphPadding2 {
+        margin: 1em 2em 0 2em;
+        text-align: justify;
+    }
+
+  /*Images*/
+  .forestIcon {
+    height: 18em;
+    width: 21em;
+  }
+
+  .topCloudIcon {
+    margin-left: 65em;
+    height: 16em;
+  }
+
+  .bottomCloudIcon {
+    margin-right: 65em;
+    margin-top: 1em;
+    height: 18em;
+  }
+
+  .profilePicture {
+    height: 22em;
+    padding-top: 6em;
+    padding-bottom: 2em;
+  }
+
+  /* Skills - Images */
+  .architectDesignerIcon,
+  .studioTableIcon,
+  .neuralMoleculeIcon {
+    height: 14em;
+    padding-top: 3em;
+    margin-bottom: 1em;
+  }
+
+
+  .contentPlanningIcon {
+    height: 10em;
+    padding-top: 1.5em;
+  }
+
+
+  /* Flex Container */
+
+  .flex-container1 {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .headingIntro {
+    margin: 0 31em;
+  }
+  .flex-container1 .item {
+    margin: 0 30em;
+  }
+  
+
+  /* Grid Container */
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 35em 35em;
+    grid-template-rows: 20em;
+  }
+
+  .grid-container1 .card {
+    margin: 2em 0.5em;
+  }
+
+  /* Grid Row - Grid Start - Grid End */
+  .grid-c {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .grid-d {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .grid-g {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .grid-h {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .grid-container2 {
+    grid-template-columns: 15em 15em;
+    padding: 1.5em;
+  }
+
+  /* Social Media */
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 1px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 1em;
+  }
+
+  .icon-bar a:hover {
+    background-color: #33bdef;
+  }
+
+  .facebook,
+  .instagram,
+  .github,
+  .linkedin,
+  .youtube {
+    color: white;
+  }
+  .facebook {
+    background: #2fa4ff;
+  }
+  .instagram {
+    background: #2fa4ff;
+  }
+  .github {
+    background: #2fa4ff;
+  }
+  .youtube {
+    background: #2fa4ff;
+  }
+  .linkedin {
+    background: #2fa4ff;
+  }
+
+  .content {
+    margin-left: 75px;
+    font-size: 30px;
+  }
+
+  /* Social Media Icons */
+  .socialMedia {
+    display: none;
+  }
+
+  .socialMediaPadding {
+    display: none;
+  }
+
+
+  .myButton {
+    font-size: 14.5px;
+  }
+
+  .contactPadding {
+    padding-bottom: 2em;
+  }
+
+
+}
+
+/* Mobile */
+@media only screen and (max-device-width: 767px) {
+  .icon-bar {
+    display: none;
+  }
+}
+
+
